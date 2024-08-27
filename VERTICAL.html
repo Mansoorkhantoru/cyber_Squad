@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Horizontal Line */
+        .horizontal-line {
+            width: 90px;
+            height: 2px; /* Thickness of the horizontal line */
+            background-color: black;
+            position: relative;
+            margin-bottom: 20px; /* Space between horizontal and vertical lines */
+        }
+
+        /* Vertical Lines */
+        .vertical-line {
+            width: 2px; /* Thickness of the vertical lines */
+            height: 20px;
+            background-color: black;
+            position: absolute;
+            bottom: -20px; /* Position the vertical lines below the horizontal line */
+        }
+
+        /* Positioning the vertical lines */
+        .vertical-line:nth-child(1) {
+            left: 0px; /* First vertical line at the start */
+        }
+
+        .vertical-line:nth-child(2) {
+            left: 20px; /* Second vertical line 20px from the first */
+        }
+
+        .vertical-line:nth-child(3) {
+            left: 40px; /* Third vertical line 20px from the second */
+        }
+
+        .vertical-line:nth-child(4) {
+            left: 60px; /* Fourth vertical line 20px from the third */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="horizontal-line">
+        <div class="vertical-line"></div>
+        <div class="vertical-line"></div>
+        <div class="vertical-line"></div>
+        <div class="vertical-line"></div>
+    </div>
+
+</body>
+</html>
